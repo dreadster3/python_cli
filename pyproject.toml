@@ -1,0 +1,23 @@
+[project]
+name = "github-reporter"
+version = "1.0.0"
+dependencies = []
+requires-python = ">=3.10"
+authors = [
+  {name = "Nuno Antunes", email = "afonso.antunes@live.com.pt"},
+]
+maintainers = [
+  {name = "Nuno Antunes", email = "afonso.antunes@live.com.pt"},
+]
+description = "Domain Driven Design in Python"
+readme = "README.md"
+# license = {file = "LICENSE.txt"}
+keywords = ["ddd", "domain-driven-design", "python"]
+classifiers = []
+
+[project.scripts]
+ghreporter = "github_reporter:main"
+
+[tool.setuptools]
+packages.find.where = ["src"]
+exclude-package-data.tests = ["tests"]
